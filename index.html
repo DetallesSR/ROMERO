@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuadros de Flores</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background-color: #4CAF50;
+      padding: 15px;
+      color: white;
+      font-size: 24px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+    .item {
+      border: 2px solid #ddd;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+    .item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .item h3 {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    .item p {
+      color: #555;
+    }
+    .buy-button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .buy-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>Galería de Cuadros de Flores</header>
+
+  <div class="gallery">
+    <div class="item">
+      <img src="https://via.placeholder.com/300x200/FFB6C1/000000?text=Flor+1" alt="Flor 1">
+      <h3>Cuadro de Flor 1</h3>
+      <p>Descripción corta de la flor 1.</p>
+      <button class="buy-button" onclick="comprar(1)">Comprar</button>
+    </div>
+    <div class="item">
+      <img src="https://via.placeholder.com/300x200/FF6347/000000?text=Flor+2" alt="Flor 2">
+      <h3>Cuadro de Flor 2</h3>
+      <p>Descripción corta de la flor 2.</p>
+      <button class="buy-button" onclick="comprar(2)">Comprar</button>
+    </div>
+    <div class="item">
+      <img src="https://via.placeholder.com/300x200/FFD700/000000?text=Flor+3" alt="Flor 3">
+      <h3>Cuadro de Flor 3</h3>
+      <p>Descripción corta de la flor 3.</p>
+      <button class="buy-button" onclick="comprar(3)">Comprar</button>
+    </div>
+    <div class="item">
+      <img src="https://via.placeholder.com/300x200/32CD32/000000?text=Flor+4" alt="Flor 4">
+      <h3>Cuadro de Flor 4</h3>
+      <p>Descripción corta de la flor 4.</p>
+      <button class="buy-button" onclick="comprar(4)">Comprar</button>
+    </div>
+    <div class="item">
+      <img src="https://via.placeholder.com/300x200/FF1493/000000?text=Flor+5" alt="Flor 5">
+      <h3>Cuadro de Flor 5</h3>
+      <p>Descripción corta de la flor 5.</p>
+      <button class="buy-button" onclick="comprar(5)">Comprar</button>
+    </div>
+    <div class="item">
+      <img src="https://via.placeholder.com/300x200/BA55D3/000000?text=Flor+6" alt="Flor 6">
+      <h3>Cuadro de Flor 6</h3>
+      <p>Descripción corta de la flor 6.</p>
+      <button class="buy-button" onclick="comprar(6)">Comprar</button>
+    </div>
+    <div class="item">
+      <img src="https://via.placeholder.com/300x200/800080/000000?text=Flor+7" alt="Flor 7">
+      <h3>Cuadro de Flor 7</h3>
+      <p>Descripción corta de la flor 7.</p>
+      <button class="buy-button" onclick="comprar(7)">Comprar</button>
+    </div>
+  </div>
+
+  <script>
+    function comprar(florId) {
+      alert("Has comprado el cuadro de la flor " + florId + "!");
+    }
+  </script>
+</body>
+</html>
